@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetFlix</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title">NET<span>FLIX</span></h1>
+        <p id="description">
+            Thank you for signing up at Netflix. Tell us more about your self
+        </p>
+        <form action="result.html" method="get" id="survey-form">
+            <div class="box">
+                <label for="isim">Name</label><br />
+                <input type="text" id="isim" name="Name" required placeholder="Enter your name" />
+            </div>
+            <div class="box">
+                <label for="yas">Age</label><br />
+                <input type="number" id="yas" name="Age" placeholder="Age" />
+            </div>
+            <div class="box">
+                <label for="Eposta">Email</label><br />
+                <input type="email" id="Eposta" name="Email" placeholder="Enter your email" />
+            </div>
+            <div class="box">
+                <label for="icerik_tipi">Content type</label><br />
+                <select name="Secilen_icerik" id="icerik_tipi">
+                    <option value="Series">Series</option>
+                    <option value="Films">Films</option>
+                    <option value="Cartoons">Cartoons</option>
+                <select>
+            </div>
+            <br>
+
+            <div class="box">
+                <p style="margin: 0;">Movie type</p>
+                <input type="checkbox" name="komedi" id="komedi">
+                <label for="komedi">Comedy</label><br>
+                <input type="checkbox" name="aksiyon" id="aksiyon">
+                <label for="aksiyon">Action</label><br>
+                <input type="checkbox" name="romantik" id="romantik">
+                <label for="romantik">Romance</label>
+            </div>
+            <br>
+            <div class="box">
+                <p style="margin: 0;">Gender</p>
+                <input type="radio" name="Cinsiyet" value="Erkek" id="gender1" />
+                <label for="gender1">Male</label><br>
+                <input type="radio" name="Cinsiyet" value="Kadın" id="gender2" />
+                <label for="gender2">Female</label><br>
+                <input type="radio" name="Cinsiyet" value="Diger" id="gender3" />
+                <label for="gender3">Other</label>
+            </div>
+            <br>
+            <div class="box">
+                <label for="geri_bildirim">Feed back</label><br>
+                <textarea name="Yorum" id="geri_bildirim" cols="30px" rows="5">Any comment</textarea>
+            </div>
+            <br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body {
+  background-image: url(./background_image.jpg);
+  /* background-position: center; */
+  /* background-size: cover;  */
+  /* background-repeat: no-repeat; */
+}
+
+span {
+  color: red;
+}
+
+#container {
+  /* border: 2px solid red; */
+  color: white;
+  margin: 10px 30px;
+  background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+#title {
+  text-align: center;
+  margin: 10px;
+  font-family: "Bowlby One SC", cursive;
+}
+
+#description {
+  /* border: 1px solid black; */
+  text-align: center;
+  margin: ;
+}
+
+#survey-form {
+  /* border: 2px solid white; */
+  width: 300px;
+  margin: auto;
+  padding: 15px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  font-size: 0.8rem;
+  text-align: center;
+  /* padding-left: 10px; */
+}
+
+.box {
+  margin: 10px;
+  text-align: left;
+}
+
+#submit {
+  color: white;
+  background-color: red;
+  border-radius: 30px;
+  height: 30px;
+  width: 100px;
+}
+
+#submit:hover{
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
+
+/* #submit:active{
+    background-color: aqua;
+} */
+
