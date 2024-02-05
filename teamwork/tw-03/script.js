@@ -1,38 +1,33 @@
-function reverseWordsWithoutArray(sentence) {
-    let reversedSentence = "";
-    let word = "";
+// function reverseWordsWithoutArray(sentence) {
+//     let reversedSentence = "";
+//     let word = "";
 
-    for (let i = sentence.length - 1; i >= 0; i--) {
-        if (sentence[i] === " " || i === 0) {
-            if (i === 0) {
-                word += sentence[i];
-            }
+//     for (let i = sentence.length - 1; i >= 0; i--) {
+//         if (sentence[i] === " " || i === 0) {
+//             if (i === 0) {
+//                 word += sentence[i];
+//             }
 
+//             for (let j = word.length - 1; j >= 0; j--) {
+//                 reversedSentence += word[j];
+//             }
 
-            for (let j = word.length - 1; j >= 0; j--) {
-                reversedSentence += word[j];
-            }
+//             if (i !== 0) {
+//                 reversedSentence += " ";
+//             }
 
-            if (i !== 0) {
-                reversedSentence += " ";
-            }
+//             word = "";
 
-            word = "";
+//         } else {
+//             word += sentence[i];
+//         }
+//     }
 
-        } else {
-            word += sentence[i];
-        }
-    }
-
-    return reversedSentence;
-}
-const inputSentence = "Hello World"
-const reversedSentence = reverseWordsWithoutArray(inputSentence)
-console.log(reversedSentence);
-
-
-
-
+//     return reversedSentence;
+// }
+// const inputSentence = "Hello World"
+// const reversedSentence = reverseWordsWithoutArray(inputSentence)
+// console.log(reversedSentence);
 
 // let n = +prompt("Ilk kaç Fibonacci numarası gösterilsin?")
 // let cikti = ""
@@ -55,22 +50,16 @@ console.log(reversedSentence);
 // }
 // console.log(`Fibonacci serisinin ilk ${n} sayısı şunlardır: ${cikti}`)
 
+// let n = +prompt("Ilk kaç Fibonacci numarası gösterilsin?")
+// let a = 0, b = 1;
+// let cikti = ""
 
-
-
-
-
-
-let n = +prompt("Ilk kaç Fibonacci numarası gösterilsin?")
-let a = 0, b = 1;
-let cikti = ""
-
-for (let i = 0; i <= n; i++) {
-    cikti = a;
-    a = b;
-    b = cikti + b;
-}
-console.log(`Fibonacci serisinin ilk ${n} sayısı şunlardır: ${cikti}`)
+// for (let i = 0; i <= n; i++) {
+//     cikti = a;
+//     a = b;
+//     b = cikti + b;
+// }
+// console.log(`Fibonacci serisinin ilk ${n} sayısı şunlardır: ${cikti}`)
 
 // function fibonacciYazdir(adet) {
 //     var a = 0, b = 1;
@@ -88,4 +77,29 @@ console.log(`Fibonacci serisinin ilk ${n} sayısı şunlardır: ${cikti}`)
 // var adet = prompt("Kaç adet Fibonacci sayısı yazdırmak istiyorsunuz?");
 // fibonacciYazdir(adet)
 
+// const myCar = 'My car is yellow';
+
+// function aName(){
+//     myCar = 'My car is red';
+//     console.log(myCar);
+// }
+
+// aName()
+// console.log(myCar);
+
+// function evenNumber(num){
+//     if(num % 2 == 0) {
+//         console.log(`${num} çifttir`);
+//     } else {
+//         console.log(`${num} tektir`);
+//     }
+// }
+
+// evenNumber(3)
+// evenNumber(2)
+
+const square = (num = "") => num ** 2;
+
+
+console.log(square());
 
