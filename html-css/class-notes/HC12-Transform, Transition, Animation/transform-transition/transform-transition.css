@@ -1,0 +1,145 @@
+body{
+    height: 200vh;
+}
+
+.yazi {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto;
+  width: 50vw;
+}
+
+/* ---------------------------------- */
+/*          TRANSFORM _ROTATE         */
+/* ---------------------------------- */
+/* rotate içinde ... degree (deg) olarak değer verilir */
+/* 90 ve 270 deerelecelerde yazılar tam dik olduklarından ve 3 boyutlu olarak bakamadığımız için gözükmezler */
+
+.yazi1 {
+  background-color: darkcyan;
+  transform: rotateX(180deg);
+}
+.yazi1:active + .yazi2 {
+  background-color: gold;
+}
+
+.yazi2 {
+  background-color: skyblue;
+  transform: rotateY(180deg);
+}
+
+.yazi3 {
+  background-color: red;
+}
+.yazi3:active {
+  background-color: red;
+  /* transform-origin: right; */
+  transform: rotate(30deg) scale(1.5);
+  position: relative;
+  z-index: 2;
+  /* transform-origin: 20%; */
+}
+
+/* ---------------------------------- */
+/*          TRANSFORM SCALE           */
+/* ---------------------------------- */
+
+/* boyutlandırma için kullanılır */
+
+.yazi4 {
+  background-color: fuchsia;
+  /* rotate: 30deg; */
+  transform: scaleX(1.5);
+}
+
+.yazi5 {
+  background-color: olive;
+  transform: scaleY(2);
+}
+
+.yazi6 {
+  background-color: darkgoldenrod;
+}
+
+.yazi6:active {
+  background-color: darkgoldenrod;
+  transform: scale(3);
+}
+
+img{
+    transform: skewX(85deg);
+    transform: skewY(85deg);
+    transform: skew(30deg, 30deg);
+}
+
+/* ---------------------------------- */
+/*          TRANSFORM TRANSLATE       */
+/* ---------------------------------- */
+
+/* Translate öteleme hareket ettirmek için kullanılır */
+
+
+.box{
+    background-color: crimson;
+    width: 100px;
+    height: 50px;
+    margin: 2px;
+}
+
+.x{
+    /* transform: translateX(150px); */
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(0.61,-0.92, 0.53, 2.37);
+}
+.x:active{
+    transform: translateX(250px);
+    /* background-color: orange; */
+    /* width: 300px; */
+}
+
+.y{
+    transition: all 2s ease-in-out;
+}
+
+.y:active{
+    background-color: magenta;
+    transform: translateY(200px);
+    height: 100px;
+}
+
+.xy{
+    transition-property: all ;
+    transition-duration: 2s;
+
+}
+
+.xy:active{
+    transform: translate(100px, 50px);
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+}
+
+.btn-div{
+    text-align: center;
+}
+
+.btn{
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    /* transition-property:  background-color ;
+    transition-duration: 1s; */
+    transition: all 200ms ease-in-out;
+}
+
+
+.btn:active{
+    background-color: red;
+    color: wheat;
+    transform: scale(95%);
+}
