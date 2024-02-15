@@ -1,0 +1,15 @@
+.custom{
+    background-color: olive !important;
+    color: darkgreen !important;
+}
+
+
+.berivan{
+    border: 5px solid red;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: green;
+    color: yellow;
+    
+}
