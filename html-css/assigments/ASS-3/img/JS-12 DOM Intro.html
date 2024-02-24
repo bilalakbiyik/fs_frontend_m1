@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://127.0.0.1:5500/javascript/class-notes/js12_dom-intro/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS-12 DOM Intro</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 style="text-align: center">DOM SELECTORS</h1>
+    </header>
+    <main>
+      <section class="add-item">
+        deneme içerik
+        <h2 id="add-new-item">ADD NEW ITEM</h2>
+        <input id="input" type="text" value="deneme">
+        <input id="btn" type="button" value="ADD">
+      </section>
+      <section class="item-list">
+        <section id="new-sec">
+          <h3>ITEM LIST</h3>
+          <ul>
+            <li id="html-li" class="list">HTML</li>
+            <li class="list">CSS</li>
+            <li id="js-li" class="list">Javascript</li>
+            <li class="list">React</li>
+            <li id="react-li" class="list">Django</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <!-- <script src="selectors.js"></script> -->
+    <script src="./JS-12 DOM Intro_files/traversingDOM.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<deepl-input-controller><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div><div class="dl-input-translation-container svelte-ju4595"><div></div></div></div></template></deepl-input-controller></body></html>
