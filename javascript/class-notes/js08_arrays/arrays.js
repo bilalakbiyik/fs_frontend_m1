@@ -126,7 +126,7 @@ console.log(number);
 
 //* fill()
 
-const degerler = [2,1,4,33,7,9,22]
+const degerler = [2, 1, 4, 33, 7, 9, 22]
 // degerler.fill(0)
 // for (let i = 0, j = 1; i < degerler.length; i++) {
 //   degerler[i] = j++
@@ -137,3 +137,43 @@ const degerler = [2,1,4,33,7,9,22]
 degerler.fill(44, 3, 5)
 console.log(degerler);
 
+// --------------------------------------------------
+
+
+
+let myArr2 = ["hello", "world", "FS cohort16!"];
+myArr2 = myArr2.map(item => item.toUpperCase());
+let cohort = myArr2[2];
+cohort.toLowerCase();
+console.log(cohort);  // FS COHORT16!
+
+// --------------------------------------------------
+
+const data = {
+  products: [
+    {
+      Prod1: {
+        price: "1500",
+      },
+      Prod2: {
+        price: "1000",
+      },
+      Prod3: {
+        price: "1200",
+      },
+      Prod4: {
+        price: "500",
+      },
+      Prod5: {
+        price: "250",
+      },
+    }
+  ],
+  total: "5",
+};
+
+const { products } = data;
+
+const priceArr = Object.keys(products[0]).map((item) => products[0][item].price)
+
+console.log(priceArr); // (5) ['1500', '1000', '1200', '500', '250']
