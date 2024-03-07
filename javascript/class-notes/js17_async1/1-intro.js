@@ -18,3 +18,101 @@
 
 //* Senkron
 //* ------------------------------------------------
+
+// const gecikme = (sure) => {
+//     const basla = new Date().getTime()
+//     while( new Date().getTime() < basla + sure){
+//         ;
+//     }
+// }
+
+// console.log("Senkron");
+// // alert("Blocking") //? Senkron çalışmada bir komut çok uzun sürerse uygulamayı bloklar.
+// console.log("FS16");
+
+
+// console.time("timer");
+
+// gecikme(2000)
+
+// console.timeEnd("timer");
+
+// console.log("devam");
+
+//* Asenkron (setTimeout()) - Belirli süre 
+
+// setTimeout(() => {
+//     console.log("Timeout1 doldu");
+// }, 2000)
+
+// console.log("start");
+
+// setTimeout(() => {
+//     console.log("Timeout2 doldu");
+// }, 1000)
+
+// setTimeout(() => {
+//     console.log("Timeout3 doldu");
+// }, 0)
+
+// console.log("uygulama bitti");
+
+// --------------------------------
+
+// const timeoutID = setTimeout(() => {
+//     console.log("Timeout1 doldu");
+// }, 2000)
+
+// console.log("start");
+
+// setTimeout(() => {
+//     console.log("Timeout2 doldu");
+// }, 1000)
+
+// setTimeout(() => {
+//     clearTimeout(timeoutID);
+// }, 500)
+
+// console.log("uygulama bitti");
+
+//* Asenkron (setInterval, clearInterval) - Priyodik bir aralık belirler
+
+// let sayac = 0
+
+// const intervalId = setInterval(() => {
+//     console.log(++sayac);
+//     if(sayac >= 10){
+//         clearInterval(intervalId)
+//     }
+// }, 200);
+
+//! Callback Hell (nested ve birbirine bagli callback'ler)
+//!-----------------------------------------------------
+//* Eger birbirine bagimli asenkron kodlarin yazilmasi gerekirse,nested callback
+//* yapisinin kullanilmasi gerekebilir. Fakat bu iyi bir programlama yaklasimi degildir.
+// !callback hell olarak adlandirilan bu yapinin anlasilmasi ve surdurulebilirligi oldukca zordur.
+
+setTimeout(() => {
+    console.log("john:Hi") //? veri isteği (req)
+    setTimeout(() => {
+      console.log("Sarah: Hello") //? res geliyor
+      setTimeout(() => {
+        console.log("John: How Are you?") //? veri gonder
+        setTimeout(() => {
+          console.log("Sarah:Fine and you?") //?gondermeye baslaniyor
+        }, 1000)
+      }, 1000)
+    }, 1000)
+  }, 1000)
+  
+  
+  //? COZUMLER:
+  //?----------------------------------------------------
+  //* 1- XMLHttpRequest (Eski yontem, Ornek: AJAX)
+  //? https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+  //* 2- Promise (Custom async kod yazmak için elverişli- Advance)
+  //! 3- Fetch API (Promise'in basitlestirilmis hali),
+  //! 4- ASYNC-AWAIT (Fetch API'nin makyajlanmis hali)
+
+
+
